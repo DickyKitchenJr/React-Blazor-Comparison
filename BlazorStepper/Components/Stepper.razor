@@ -1,0 +1,49 @@
+@rendermode InteractiveServer
+
+<div class="stepper-div">
+    <ol class="stepper-ol">
+        @for (int i = 1; i <= StepsInStepper; i++)
+        {
+            @if (i == 1 && StepProgression == 0)
+            {
+                <li class="stepper-li-active">
+                    <div class="li-div">
+                        <p class="stepper-circle-active">@i</p>
+                    </div>
+                </li>
+            }
+            else if (i == (StepProgression + 1))
+            {
+                <li class="stepper-li-active">
+                    <div class="li-div">
+                        <p class="stepper-circle-active">@i</p>
+                    </div>
+                </li>
+            }
+            else if (i < (StepProgression + 1))
+            {
+                <li class="stepper-li-complete">
+                    <div class="li-div">
+                        <p class="stepper-circle-complete">&#10003;</p>
+                    </div>
+                </li>
+            }
+            else
+            {
+                <li class="stepper-li">
+                    <div class="li-div">
+                        <p class="stepper-circle">@i</p>
+                    </div>
+                </li>
+            }
+        }
+    </ol>
+</div>
+
+@code {
+    [Parameter]
+    public int StepsInStepper { get; set; }
+
+    [Parameter]
+    public int StepProgression { get; set; }
+}
