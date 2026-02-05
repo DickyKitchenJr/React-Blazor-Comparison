@@ -1,5 +1,12 @@
 # Stepper Component
 
+## Starting project:
+
+- clone the project
+- in the terminal go to the location of the project `C:\Your-Folder\React-Blazor-Comparison\ReactStepper`
+- install dependencies with `npm i`
+- start the project in the dev server with `npm run dev`
+
 ## Use:
 
 Creates a reusable stepper component with adjustable amount of steps and uses a function within the parent element to handle progression through the steps

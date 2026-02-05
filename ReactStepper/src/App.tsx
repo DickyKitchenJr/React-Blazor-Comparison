@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import Stepper from "./Stepper.tsx";
 
 function App() {
@@ -28,10 +27,10 @@ function App() {
             marginTop: "1rem",
           }}
         >
-          <button onClick={PreviousStep} disabled={step === 0}>
+          <button style={{padding: "0.5rem"}} onClick={PreviousStep} disabled={step === 0}>
             Previous Step
           </button>
-          <button onClick={NextStep} disabled={step === 4}>
+          <button style={{padding: "0.5rem"}} onClick={NextStep} disabled={step === 4}>
             Next Step
           </button>
         </div>

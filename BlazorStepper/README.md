@@ -1,5 +1,12 @@
 # Stepper Component
 
+## Starting project:
+
+- clone the project
+- in the terminal go to the location of the project `C:\Your-Folder\React-Blazor-Comparison\BlazorStepper`
+- build the project with `dotnet build`
+- run the project with `dotnet run`
+
 ## Use:
 
 Creates a reusable stepper component with adjustable amount of steps and uses a function within the parent element to handle progression through the steps
@@ -12,15 +19,17 @@ Creates a reusable stepper component with adjustable amount of steps and uses a 
   @code{
   int step = 0;
 
-       private void NextStep()
-       {
-          step++;
-       }
+  **the following two methods would be used in buttons within the parent component**
 
-       private void PreviousStep()
-       {
-          step--;
-       }
+        private void NextStep()
+        {
+           step++;
+        }
+
+        private void PreviousStep()
+        {
+           step--;
+        }
 
   }
 
