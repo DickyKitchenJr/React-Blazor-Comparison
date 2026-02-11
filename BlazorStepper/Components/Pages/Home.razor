@@ -4,12 +4,12 @@
 <PageTitle>Home</PageTitle>
 
 <div style="margin-top: 1rem;">
-<Stepper StepProgression="@step" StepsInStepper="5"/>
+<Stepper StepProgression="@step" StepsInStepper="3"/>
 
 @* Buttons are solely for progressing the stepper by increasing or decreasing the step index *@
     <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
         <button style="padding: 0.5rem;"  @onclick="PreviousStep" disabled="@(step == 0)">Previous Step</button>
-        <button style="padding: 0.5rem;"  @onclick="NextStep" disabled="@(step == 4)">Next Step</button>
+        <button style="padding: 0.5rem;"  @onclick="NextStep" disabled="@(step == 2)">Next Step</button>
     </div>
 </div>
 

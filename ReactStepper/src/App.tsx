@@ -15,22 +15,17 @@ function App() {
   return (
     <>
       <div style={{ marginTop: "1rem" }}>
-        <Stepper stepsInStepper={5} stepProgression={step} />
+        <Stepper stepsInStepper={3} stepProgression={step} />
 
         {/* Buttons are solely for progressing the stepper by increasing or
         decreasing the step index */}
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "1rem",
-            marginTop: "1rem",
-          }}
+          style={{display: "flex", justifyContent: "center", gap: "1rem",marginTop: "1rem"}}
         >
           <button style={{padding: "0.5rem"}} onClick={PreviousStep} disabled={step === 0}>
             Previous Step
           </button>
-          <button style={{padding: "0.5rem"}} onClick={NextStep} disabled={step === 4}>
+          <button style={{padding: "0.5rem"}} onClick={NextStep} disabled={step === 2}>
             Next Step
           </button>
         </div>
